@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hand Challenge</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="sub-container">
+        <div class="left-container">
+          <h2 class="title">Introduce el lenguaje HPL</h2>
+          <div class="emojis-container">
+            <label class="emoji-label" id="nextPosition">👉</label>
+            <label class="emoji-label" id="prevPosition">👈</label>
+            <label class="emoji-label" id="increaseMemory">👆</label>
+            <label class="emoji-label" id="decreaseMemory">👇</label>
+            <label class="emoji-label" id="jumpToNextLeftFist">🤜</label>
+            <label class="emoji-label" id="jumpToNextRightFist">🤛</label>
+            <label class="emoji-label" id="showLetter">👊</label>
+            <label class="emoji-label" id="jumpToStart">🌝</label>
+            <label class="emoji-label" id="jumpToEnd">🌚</label>
+            <label class="emoji-label" id="jumpToMiddle">🌞</label>
+            <label class="emoji-label" id="deleteCharacter">❌</label>
+          </div>
+          <textarea disabled id="message"></textarea>
+          <h2 class="title" style="margin-top: 10px">Valor actual de la memoria: <label id="currentMemoryValue"></label></h2>
+
+          <h2 class="title" style="margin-top: 10px">
+            Posición actual del puntero:
+            <label id="currentPositionValue"></label>
+          </h2>
+          <h2 class="title" style="margin-top: 10px">Notas:</h2>
+          <h2 class="instruction">🤜 : Solo funcionará cuando el valor de la memoria sea igual que 0</h2>
+          <h2 class="instruction">🤛 : Solo funcionará cuando el valor de la memoria sea distinto de 0</h2>
+        </div>
+        <div class="right-container">
+          <h2 class="title">La mano está diciendo:</h2>
+          <h2 class="title" id="result"></h2>
+          <h2 class="instruction">👉 : mueve el puntero de memoria a la siguiente celda</h2>
+          <h2 class="instruction">👈 : mueve el puntero de memoria a la celda anterior</h2>
+          <h2 class="instruction">👆 : incrementa la celda de memoria en la posición actual</h2>
+          <h2 class="instruction">👇 : disminuye la celda de memoria en la posición actual</h2>
+          <h2 class="instruction">🤜 : si la celda de memoria en la posición actual es 0, salta justo después del 🤛 correspondiente</h2>
+          <h2 class="instruction">🤛 : si la celda de memoria en la posición actual no es 0, salta justo después del 🤜 correspondiente</h2>
+          <h2 class="instruction">👊 : muestra el carácter actual representado por el código ASCII definido por la posición actual</h2>
+          <h2 class="instruction">🌝 : mueve el puntero de memoria a la primera celda</h2>
+          <h2 class="instruction">🌚 : mueve el puntero de memoria a la ultima celda</h2>
+          <h2 class="instruction">🌞 : mueve el puntero de memoria a la celda de la letra M</h2>
+          <h2 class="instruction">❌ : Elimina el ultimo caracter ingresado</h2>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
